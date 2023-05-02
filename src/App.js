@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
+  const personalDetails = {
+    name: "Cody Couper",
+    location: "Invercargill, NZ",
+    email: "codydpc@gmail.com",
+    availability: "Open for work",
+    brand: "REMOVE",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <AnimatedRoutes personalDetails={personalDetails} />
+    </>
   );
 }
 

@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Digimon Card App",
+    "image": "./projectImages/dca.png",
+    "description": "For my SIT second year project my group created a moblie app that allowed users manage their collection, and search for cards and view their details.",
+    "technologies": ".Net MAUI",
+    "github": "https://tinyurl.com/mrxdc2mv",
+    "deployed": "https://tinyurl.com/mrxdc2mv",
+    "bgcolor": "#f37737",
+    "id": "1"
+  },
+  {
+    "title": "Mugan Trial",
+    "image": "./projectImages/mt.png",
+    "technologies": "Unity | C#",
+    "description": "Mugan Trial was my second year group game project. It's a 2D rougelike topdown shooter with randomly generated levels.",
+    "github": "https://tinyurl.com/mrxdc2mv",
+    "deployed": "https://tinyurl.com/mrxdc2mv",
+    "bgcolor": "#29cbe0",
+    "id": "2"
+  },
+  {
+    "title": "PROJECT TANK",
+    "image": "./projectImages/pt.png",
+    "technologies": "Unity | C#",
+    "description": "This is my current third year game project. It is a 3D survival horror with heavy inspiration from PS1 games of the same genre.",
+    "github": "https://tinyurl.com/mrxdc2mv",
+    "deployed": "https://tinyurl.com/mrxdc2mv",
+    "bgcolor": "#6c4bf4",
+    "id": "3"
+  },
+  {
+    "title": "Jade Project",
+    "image": "./projectImages/jade.png",
+    "technologies": "JADE",
+    "description": "Our team created a JADE project that managed an airports ticketing system.",
+    "github": "https://tinyurl.com/mrxdc2mv",
+    "deployed": "https://tinyurl.com/mrxdc2mv",
+    "bgcolor": "#f85781",
+    "id": "4"
+  }
+]
