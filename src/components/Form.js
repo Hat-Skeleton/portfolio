@@ -15,7 +15,7 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: "4f412a8f-0a11-4ba9-8e37-e12661f36602",
+    access_key: "",
   });
 
   const handleChange = (e) => {
@@ -66,7 +66,10 @@ const Form = () => {
       onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Message Me</h4>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="text"
           className="formControl"
@@ -78,7 +81,10 @@ const Form = () => {
           required
         />
       </div>
-      <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
+      <div
+        className="col-12 col-md-6 formGroup"
+        style={{ display: "inline-block" }}
+      >
         <input
           type="email"
           className="formControl"
@@ -115,7 +121,9 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">{success ? "Message Sent" : "Send Message"}</button>
+        <button className="btn">
+          {success ? "Message Sent" : "Send Message"}
+        </button>
       </div>
     </motion.form>
   );
