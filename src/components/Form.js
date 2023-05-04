@@ -30,7 +30,7 @@ const Form = () => {
     const data = JSON.stringify(formData);
 
     fetch(
-      "https://discord.com/api/webhooks/1103805303633498212/Fdx093NM61gVWbY1CpYyD1ncOku5SfhKE0Nt3yOvplxOUjBEYy4NTGYHBPdySZkL7ySJ",
+      "https://discord.com/api/webhooks/1099912491447877723/Ds9iUTAv0gPQg8A5kD7c9SJYSnEYM-nVu69f_CA-XzzbYzzICKJjAqftEusNR5L8Di6s",
       {
         method: "POST",
         headers: {
@@ -53,7 +53,8 @@ const Form = () => {
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
-      });
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
