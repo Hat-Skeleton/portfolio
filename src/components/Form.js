@@ -16,15 +16,6 @@ const Form = () => {
     subject: "",
     message: "",
   });
-  let data2;
-  function fillData() {
-    data2 = {
-      "Name:": formData.name,
-      "Email:": formData.email,
-      "Subject:": formData.subject,
-      "Message:": formData.message,
-    };
-  }
 
   const handleChange = (e) => {
     setFormData({
@@ -39,14 +30,14 @@ const Form = () => {
     const data = JSON.stringify(formData);
 
     fetch(
-      "https://discord.com/api/webhooks/1099912491447877723/Ds9iUTAv0gPQg8A5kD7c9SJYSnEYM-nVu69f_CA-XzzbYzzICKJjAqftEusNR5L8Di6s",
+      "https://discord.com/api/webhooks/1103805303633498212/Fdx093NM61gVWbY1CpYyD1ncOku5SfhKE0Nt3yOvplxOUjBEYy4NTGYHBPdySZkL7ySJ",
       {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: data2,
+        body: data,
       }
     )
       .then((res) => res.json())
@@ -133,7 +124,6 @@ const Form = () => {
       <div className="col-12 formGroup formSubmit">
         <button className="btn">
           {success ? "Message Sent" : "Send Message"}
-          {fillData()}
         </button>
       </div>
     </motion.form>
