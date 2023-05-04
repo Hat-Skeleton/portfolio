@@ -15,8 +15,16 @@ const Form = () => {
     email: "",
     subject: "",
     message: "",
-    access_key: "",
   });
+  let data2;
+  function fillData() {
+    data2 = {
+      "Name:": formData.name,
+      "Email:": formData.email,
+      "Subject:": formData.subject,
+      "Message:": formData.message,
+    };
+  }
 
   const handleChange = (e) => {
     setFormData({
@@ -38,7 +46,7 @@ const Form = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: data,
+        body: data2,
       }
     )
       .then((res) => res.json())
@@ -54,8 +62,7 @@ const Form = () => {
         setTimeout(() => {
           setSuccess(false);
         }, 3000);
-      })
-      .catch((err) => console.log(err));
+      });
   };
 
   return (
@@ -126,6 +133,7 @@ const Form = () => {
       <div className="col-12 formGroup formSubmit">
         <button className="btn">
           {success ? "Message Sent" : "Send Message"}
+          {fillData()}
         </button>
       </div>
     </motion.form>
