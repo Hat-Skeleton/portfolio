@@ -7,7 +7,8 @@ function App() {
     location: "Invercargill, NZ",
     email: "codydpc@gmail.com",
     availability: "Open for work",
-    brand: "Welcome to my site",
+    brand:
+      "Hey i'm Cody, I'm a student my final year and have a passion for devlopment. I have skills in C#, Python, Java, HTML, CSS, JavaScript. Please feel free to contact me for any enquires.",
   };
 
   return (
